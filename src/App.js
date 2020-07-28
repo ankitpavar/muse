@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-  return <div> Muse</div>;
+  return <div> Muse App</div>;
 }
 
 export default App;
