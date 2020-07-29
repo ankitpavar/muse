@@ -41,7 +41,7 @@ const MusicCard = ({ song }) => {
           </div>
         </div>
         <div className="px-6 py-4">
-          <AudioPlayer src={song.stream_link} />
+          <AudioPlayer autoPlay src={song.stream_link} />
         </div>
       </div>
     </div>
