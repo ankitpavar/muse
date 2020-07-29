@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div>
-      <section className="h-screen text-white bg-gray-400 body-font">
+      <section className="h-screen text-white bg-gray-300 body-font">
         <Header />
         <div className="container px-4 py-5 mx-auto ">
           <div className="max-w-md  mx-auto my-5">
@@ -37,13 +37,14 @@ function App() {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="text"
               >
-                Enter Song URL :
+                Enter JioSaavn Song URL :
               </label>
               <div className="flex justify-center items-center">
                 <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   type="text"
                   name="query"
+                  required
                   autoComplete="off"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
