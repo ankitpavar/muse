@@ -5,8 +5,12 @@ import 'react-h5-audio-player/lib/styles.css';
 const MusicCard = ({ song }) => {
   return (
     <div>
-      <div className="max-w-md rounded overflow-hidden shadow-lg mx-auto my-8">
-        <img className="w-full h-64" src={song.song_image} alt={song.song_title} />
+      <div className="md:max-w-md sm:max-w-sm rounded-md overflow-hidden shadow-2xl mx-auto my-8">
+        <img
+          className="w-64 h-64 mx-auto py-4 border-black rounded"
+          src={song.song_image}
+          alt={song.song_title}
+        />
         <div className="px-6 py-4 flex  justify-between items-center">
           <div>
             <div className="font-bold text-xl mb-2 text-gray-800">
@@ -23,7 +27,7 @@ const MusicCard = ({ song }) => {
                 height="40"
                 viewBox="0 0 24 24"
                 strokeWidth="2.5"
-                stroke="#000"
+                stroke="#2d3748"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -37,7 +41,7 @@ const MusicCard = ({ song }) => {
           </div>
         </div>
         <div className="px-6 py-4">
-          <AudioPlayer autoPlay src={song.stream_link} />
+          <AudioPlayer src={song.stream_link} />
         </div>
       </div>
     </div>
